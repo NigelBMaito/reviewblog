@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js/main.js' %}" defer></script>
-</head>
-<body>
-    <h1>hey ysaaaa</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magni laborum mollitia expedita dignissimos similique quod eaque distinctio aliquam sapiente, quam id dolore. Voluptate, incidunt adipisci ad temporibus soluta iste.</p>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title  %}
+    About
+{% endblock  %}
+
+{% block content %}
+    <h1>This is about us</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, architecto velit suscipit minus quibusdam delectus, quaerat ex illo necessitatibus ad veritatis atque, officia eos? Minus temporibus quas perspiciatis hic voluptate?</p>
+{% endblock  %}

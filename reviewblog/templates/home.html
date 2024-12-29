@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the star review blog</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <h1>This is the star review blog</h1>
-    <section>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non praesentium necessitatibus hic repellendus, in laborum asperiores voluptatum. <a href="/about">About</a> Quo, eaque, deserunt laudantium dolorum nobis maiores cumque nam, necessitatibus odit est impedit?</p>
-    </section>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock  %}
+
+{% block content %}
+<h1>This is the star review blog</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem fugit repudiandae, itaque accusamus hic id libero perspiciatis quae excepturi iure fugiat, sunt cum nemo distinctio quos blanditiis veritatis praesentium.</p>
+{% endblock  %}
